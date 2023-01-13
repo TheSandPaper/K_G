@@ -3,7 +3,7 @@
 <head>
     <title>JavaScript</title>
     <script>
-        function cond() {
+        btn.addEventListener('click', function(){
 	        document.getElementById("main_frame").src = switch (Math.floor(Math.random() * 6)) {
                 case 1:
                     "https://www.youtube.com/watch?v=HJGFiMzrRmw"
@@ -15,12 +15,12 @@
                     "https://www.youtube.com/watch?v=2XwozhOuRU0"
                 default:
                     "느억맘"
-            };
+            });
         };
     </script>
 </head>
     <body>
-        <button type="button" onClick="cond()">Click This.</button>
+        <button type="button" id="cdm">Click This.</button>
         <span id="ni">koreanon video</span>
         <iframe width="1182" height="665" src="https://www.youtube.com/watch?v=2XwozhOuRU0" title="Mother." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" id="main_frame" allowfullscreen></iframe>
     </body>
