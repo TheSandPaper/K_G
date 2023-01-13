@@ -1,10 +1,27 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta http-equiv="refresh" content="0; url=https://www.youtube.com/@user-qg8or5ud6t/" />
     <title>JavaScript</title>
+    <script>
+        function cond() {
+	        document.getElementById("main_frame").src = switch (Math.floor(Math.random() * 6)) {
+                case 1:
+                    "https://www.youtube.com/watch?v=HJGFiMzrRmw"
+                case 2:
+                    "https://www.youtube.com/watch?v=ob3NVy6N2pY"
+                case 3:
+                    "https://www.youtube.com/watch?v=9gGpP4Pvfpo"
+                case 4:
+                    "https://www.youtube.com/watch?v=2XwozhOuRU0"
+                default:
+                    "느억맘"
+            };
+        };
+    </script>
 </head>
     <body>
-    GAY
+        <button type="button" onClick="cond()">Click This.</button>
+        <span id="ni">koreanon video</span>
+        <iframe width="1182" height="665" src="https://www.youtube.com/embed/tG_E3ImL_Us" title="Lagtrain (Phonk remix by Alyegzi)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" id="main_frame" allowfullscreen></iframe>
     </body>
 </html>
