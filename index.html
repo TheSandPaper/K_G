@@ -8,20 +8,24 @@
     <meta content="https://cdn.discordapp.com/guilds/917787333292593223/users/444721998396915713/avatars/1c284987f7f813ca2f0c470ad554c45f.png" property="og:image" />
     <meta content="#000000" data-react-helmet="true" name="theme-color" />
     <script>
-        btn.addEventListener('click', function(){
-	        document.getElementById("main_frame").src = switch (Math.floor(Math.random() * 6)) {
+        btn.addEventListener('click', function() {
+	        switch(Math.floor(Math.random() * 6)) {
                 case 1:
-                    "https://www.youtube.com/watch?v=HJGFiMzrRmw"
+                    document.getElementById("main_frame").src = "https://www.youtube.com/watch?v=HJGFiMzrRmw"
+                    break;
                 case 2:
-                    "https://www.youtube.com/watch?v=ob3NVy6N2pY"
+                    document.getElementById("main_frame").src = "https://www.youtube.com/watch?v=ob3NVy6N2pY"
+                    break;
                 case 3:
-                    "https://www.youtube.com/watch?v=9gGpP4Pvfpo"
+                    document.getElementById("main_frame").src = "https://www.youtube.com/watch?v=9gGpP4Pvfpo"
+                    break;
                 case 4:
-                    "https://www.youtube.com/watch?v=2XwozhOuRU0"
+                    document.getElementById("main_frame").src = "https://www.youtube.com/watch?v=2XwozhOuRU0"
+                    break;
                 default:
-                    "느억맘"
-            });
-        };
+                    alert("느억맘")
+                    break;
+            }});
     </script>
 </head>
     <body>
